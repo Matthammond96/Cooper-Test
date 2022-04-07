@@ -1,0 +1,110 @@
+.tableContainer
+  width: 100%
+  max-width: var(--container-max-width)
+  background-color: var(--container-background-colour)
+  border-radius: 6px
+  box-shadow: var(--container-backround-shadow)
+  .tableTitle
+    padding: var(--container-padding)
+  .ordersTable
+    width: 100%
+    padding: 0 24px
+    box-shadow: var(--container-backround-shadow)
+    // border-spacing: 10px 0
+    tr
+      box-shadow: var(--container-backround-shadow)
+      td
+        padding: 8px
+        vertical-align: top
+        &:nth-child(1)
+          padding-left: 0px
+        &:nth-last-child(1)
+          padding-right: 0px
+          
+      .orderTableSelectContainer
+        text-align: center
+    .OrdersItemCurreny
+      display: grid
+      grid-template-columns: 1fr 1fr
+      .CurrenyContainer
+        display: flex
+        gap: 0 8px
+    .orderItemButtonContainer
+      display: flex
+      gap: 0 12px
+      justify-content: flex-end
+    .orderActionsContainer
+      text-align: center
+      p
+        text-align: center
+      .orderActionsIcon
+        width: 24px
+        height: 24px
+        background-color: #D2FFD8
+        border-radius: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin: 0 auto
+        p
+          text-align: center
+          font-weight: 600
+          color: #28CF3E
+          line-height: 0px
+          margin: -2px 0 0 0
+        &.sell
+          background-color: #FFECD2
+          p
+            color: #FFA428
+
+  .tableAnalytics
+    background-color: var(--container-secondary-background-color)
+    padding: var(--container-padding)
+    display: flex
+    gap: 45px
+    .TableAnalyticItem
+      border-left: 1px solid #E6EAEA
+      padding: 5px 0px 5px 16px
+      &:nth-child(1)
+        padding-left: 0
+        border-left-width: 0px
+
+  .loadingContainer
+    width: 100%
+    padding: 64px 0
+    display: grid
+    grid-template-columns: 1fr
+    justify-items: center
+    align-items: center
+    svg
+      animation: 2s linear infinite spinner
+
+.ordersDateItem
+  width: 40px
+  height: 40px
+  background-color: #F8FAFA
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 6px
+  div > p
+    line-height: 17px
+    color: #86939E
+    margin: 0
+    text-align: center
+    &:nth-child(2)
+      font-size: 18px
+      
+.rightAlignItem
+  text-align: right
+
+@keyframes spinner 
+  0%
+    transform: translate3d(0%, 0%, 0) rotate(0deg)
+  
+  100% 
+    transform: translate3d(0%, 0%, 0) rotate(360deg)
+        
+      

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-background: #fff;
+  --secondary-background: #F8FAFA;
+  --primary-font-colour: #30353B;
+  --secondary-font-colour: #86939E;
+  --app-background-colour: #E3E8E8;
+  --container-max-width: 1180px;
+  --container-background-colour: #fff;
+  --container-padding: 18px 25px;
+  --container-backround-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04), 0px 2px 1px rgba(85, 98, 98, 0.04);
+  --container-secondary-background-color: var(--secondary-background);
+}
+
+h1, h2, h3, h4, p {
+  color: var(--primary-font-colour)
+}
+
+h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 5px;
+}
+
+.small {
+  font-size: 11px;
+  color: var(--secondary-font-colour)
+}
